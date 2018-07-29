@@ -1,0 +1,7 @@
+step 1: The VR make which you create should be inside it
+2: Navigating to desktop and project folder
+3: commands:: git status == you'll find something in red
+			  git add . == you'll add all files
+			  git status == you'll get something in green
+			  git commit -m "AnyMessage"
+			  git push -u origin master (or) git push origin master
