@@ -1,39 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        
-        
-        <script src="https://aframe.io/releases/0.2.0/aframe.js"></script>
-    </head>
-    
-    <body>
-        <a-scene>
-            <a-assets>
-                <video id="SphereVideo" autoplay loop="true" src="video/SphereVideo.webm" webkit-playsinline>
-                	<a-asset-item id="object" src="models/pokeball-vray.obj"></a-asset-item>
-                <a-asset-item id="material" src="models/pokeball-vray.mtl"></a-asset-item>
-            </a-assets>
-            <a-box color="#FFFFFF" width="1" height="1" depth="1"
-                   position="0 0 0"
-                   rotation="45 45 45"
-                   scale="1 2.5 1"
-                   src="#texture">
-                <a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"></a-animation>
-                
-                <a-event name="mouseenter" scale="4 1 6"></a-event>
-            </a-box>
-            
-            <a-camera position="0 7 5">
-                <a-cursor color="#FF0000">
-            </a-camera>
-                
-            <a-light type="spot" color="#FF0000" position="20 0 0" look-at="a-box"></a-light>
-            <a-light type="point" color="#00FF00" position="0 5 0"></a-light>
+<head>
+	<title>Login</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+	<div class="loginbox">
+		<img src="avatar.png" class ="avatar">
+		<h1>Log-in Here</h1>
+		<form>
+			<p>Username</p>
+			<input type="text" name="" placeholder="Enter Username" >
+			<p>Password</p>
+			<input type="password" name="" placeholder="Enter Password">
+			<input type="submit" name="" value="Login">
+			<a href="#">Lost your password?</a><br>
+			<a href="#">Don't have an account?</a>
+		</form>
 
-           
-            <a-videosphere src="#SphereVideo"></a-videosphere>
-
-            
-        </a-scene>
-    </body>
+</body>
+</head>
 </html>
